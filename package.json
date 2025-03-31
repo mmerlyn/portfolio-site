@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mmerlyn.github.io",
+  "homepage": "https://mmerlyn.github.io/merlyn",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
