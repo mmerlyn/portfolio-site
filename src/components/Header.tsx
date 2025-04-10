@@ -109,14 +109,14 @@ const Header: React.FC<HeaderProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
           <h1
             className="text-xl sm:text-2xl font-bold"
-            style={{ color: theme.primary }}
+            style={{ color: theme.text.primary }}
             
           >
             Merlyn Mercylona
           </h1>
           <span
             className="text-sm sm:text-base flex items-center gap-1 mt-1 sm:mt-0 sm:ml-4"
-            style={{ color: theme.primary }}
+            style={{ color: theme.text.primary }}
           >
             <FontAwesomeIcon icon={faLocationDot} />
             San Diego, CA
@@ -131,7 +131,7 @@ const Header: React.FC<HeaderProps> = ({
               key={link.id}
               href={`#${link.id}`}
               className="text-sm sm:text-base transition-colors hover:text-opacity-80" // Added hover effect
-              style={{ color: theme.primary }}
+              style={{ color: theme.text.primary }}
               onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                 // Desktop doesn't need to close menu
                 e.preventDefault();

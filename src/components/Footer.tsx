@@ -89,8 +89,7 @@ const Footer: React.FC<FooterProps> = ({
               className="text-sm sm:text-base max-w-xs"
               style={{ color: theme.text.secondary }}
             >
-              A passionate Software Engineer and Computer Science student
-              dedicated to creating innovative tech solutions.
+              CS Grad Student and Software Development Enthusiast
             </p>
           </div>
 
@@ -105,23 +104,11 @@ const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2">
               {/* Using the helper component */}
               <QuickLink section="about" label="About" />
+              <QuickLink section="skills" label="Skills" />
               <QuickLink section="projects" label="Projects" />
-              <QuickLink section="experience" label="Experience" />
+              <QuickLink section="achievements" label="Achievements" />
+              <QuickLink section="certifications" label="Certifications" />
               <QuickLink section="contact" label="Contact" />
-              <li>
-                <a
-                  href="#about"
-                  className="text-sm sm:text-base transition-colors"
-                  style={{ color: theme.text.secondary }}
-                  onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                    // Typed event
-                    e.preventDefault();
-                    scrollToSection("about");
-                  }}
-                >
-                  About
-                </a>
-              </li>
             </ul>
           </div>
 

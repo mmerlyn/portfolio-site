@@ -11,6 +11,8 @@ import {
   faEnvelope,
   faExternalLinkAlt,
   faChevronDown,
+  faGlobe,
+  
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub as fabGithub,
@@ -307,7 +309,7 @@ const Portfolio = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6, duration: 0.5 }}
                 >
-                  Hey there! I'm Merlyn, a passionate Software Developer and current Master's student
+                  Hi there! I'm Merlyn, a passionate Software Developer and current Master's student
                   in Computer Science at San Diego State University. I specialize in
                   <span style={{ color: theme.primary }}>
                     {" "}
@@ -443,22 +445,7 @@ const Portfolio = () => {
                     <FontAwesomeIcon icon={fabLinkedinIn} />
                     <span>LinkedIn</span>
                   </motion.a>
-                  <motion.a
-                    href="/path/to/resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    style={{
-                      backgroundColor: theme.secondary,
-                      color: theme.onSecondary,
-                      transition: "background-color 0.3s ease, color 0.3s ease",
-                    }}
-                    className="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm sm:text-base gap-2"
-                  >
-                    <FontAwesomeIcon icon={faFile} />
-                    <span>Leetcode</span>
-                  </motion.a>
+                
                 </motion.div>
 
                 {/* Improved Scroll Indicator with proper functionality */}
@@ -978,8 +965,9 @@ const Portfolio = () => {
                     className="mt-2 inline-block transition-colors text-sm sm:text-base"
                     style={{ color: theme.primary }}
                   >
-                    View Publication
+                    View
                   </a>
+                  
                 )}
               </motion.div>
             ))}
@@ -995,7 +983,7 @@ const Portfolio = () => {
             <FontAwesomeIcon
               icon={faCertificate}
               className="mr-2 sm:mr-3"
-              style={{ color: theme.secondary }}
+              style={{ color: theme.primary }}
             />
             Certifications
           </h2>
@@ -1011,7 +999,7 @@ const Portfolio = () => {
               }}
             >
               <thead>
-                <tr style={{ backgroundColor: `${theme.secondary}15` }}>
+                <tr style={{ backgroundColor: `${theme.primary}15` }}>
                   <th
                     className="p-4 sm:p-6 text-left text-sm sm:text-base font-semibold"
                     style={{ color: theme.text.primary }}
@@ -1061,7 +1049,7 @@ const Portfolio = () => {
                         <FontAwesomeIcon
                           icon={faCertificate}
                           className="text-lg mr-3 hidden sm:block"
-                          style={{ color: theme.secondary }}
+                          style={{ color: theme.primary }}
                         />
                         <span className="text-sm sm:text-base">
                           {cert.title}
@@ -1076,7 +1064,7 @@ const Portfolio = () => {
                             className="inline-block px-2 py-1 text-xs sm:text-sm rounded-full"
                             style={{
                               backgroundColor: `${theme.primary}30`,
-                              color: theme.secondary,
+                              color: theme.primary,
                               transition:
                                 "background-color 0.3s ease, color 0.3s ease",
                             }}
@@ -1088,7 +1076,7 @@ const Portfolio = () => {
                     </td>
                     <td
                       className="p-4 sm:p-6 align-middle"
-                      style={{ color: theme.text.secondary }}
+                      style={{ color: theme.text.primary }}
                     >
                       <span className="text-sm sm:text-base">
                         {cert.platform}
@@ -1101,7 +1089,7 @@ const Portfolio = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-sm sm:text-base hover:opacity-80"
                         style={{
-                          color: theme.secondary,
+                          color: theme.primary,
                           transition: "opacity 0.2s ease",
                         }}
                       >
@@ -1128,7 +1116,7 @@ const Portfolio = () => {
             <FontAwesomeIcon
               icon={faEnvelope}
               className="mr-2 sm:mr-3"
-              style={{ color: theme.linkedin }}
+              style={{ color: theme.primary }}
             />
             Get In Touch
           </h2>
@@ -1157,7 +1145,7 @@ const Portfolio = () => {
                     <FontAwesomeIcon
                       icon={faEnvelope}
                       className="mr-3"
-                      style={{ color: theme.linkedin}}
+                      style={{ color: theme.primary}}
                     />
                     <a
                       href="mailto:mmakireddy8011@sdsu.edu"
@@ -1171,7 +1159,7 @@ const Portfolio = () => {
                     <FontAwesomeIcon
                       icon={fabLinkedinIn}
                       className="mr-3"
-                      style={{ color: theme.linkedin }}
+                      style={{ color: theme.primary }}
                     />
                     <a
                       href="https://www.linkedin.com/in/merlynmercylona/"
