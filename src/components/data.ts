@@ -69,7 +69,7 @@ export const projects = [
         "Built a real-time ASL alphabet recognition app using CNN, OpenCV, and TensorFlow with 99% training accuracy",
       technologies: ["Python", "OpenCV", "TensorFlow"],
       githubLink:
-        "https://github.com/mmerlyn/ASL-translator",
+        "https://github.com/mmerlyn/asl-translator",
     },
     {
       title: "Analysis of Tomato Prices in Karnataka using Machine Learning",
@@ -77,7 +77,7 @@ export const projects = [
         "Built a Flask web app using Gradient Boosting (80% accuracy) to forecast monthly tomato prices from supply data",
       technologies: ["Python", "Machine Learning"],
       githubLink:
-        "https://github.com/mmerlyn/tomato-prices",
+        "https://github.com/mmerlyn/analysis-of-tomato-prices",
     },
   ];
   
