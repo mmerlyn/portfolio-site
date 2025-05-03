@@ -5,13 +5,11 @@ import {
   faCode,
   faFileAlt,
   faBriefcase,
-  faFile,
   faCertificate,
   faGraduationCap,
   faEnvelope,
   faExternalLinkAlt,
   faChevronDown,
-  faGlobe,
   
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -29,7 +27,7 @@ import { scrollToSection } from "./utils";
 
 
 // Import assets
-import testImage from "../assets/my_photo.png";
+import testImage from "../assets/my_photo.jpg";
 import themeColors from "./themeConfig";
 import {   projects, 
   publications, 
@@ -350,7 +348,7 @@ const Portfolio = () => {
                       className="text-xl font-bold"
                       style={{ color: theme.primary }}
                     >
-                      4+
+                      7+
                     </div>
                   </div>
                   <div
@@ -656,6 +654,58 @@ const Portfolio = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.cloud_devops.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 rounded-full text-sm sm:text-base"
+                        style={{
+                          backgroundColor: isDarkMode
+                            ? "rgba(255,255,255,0.1)"
+                            : "rgba(0,0,0,0.05)",
+                          color: theme.text.secondary,
+                          transition:
+                            "background-color 0.3s ease, color 0.3s ease",
+                        }}
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    className="text-lg sm:text-xl font-semibold mb-3"
+                    style={{ color: theme.text.primary }}
+                  >
+                    Developer Tools
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.developer_tools.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 rounded-full text-sm sm:text-base"
+                        style={{
+                          backgroundColor: isDarkMode
+                            ? "rgba(255,255,255,0.1)"
+                            : "rgba(0,0,0,0.05)",
+                          color: theme.text.secondary,
+                          transition:
+                            "background-color 0.3s ease, color 0.3s ease",
+                        }}
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    className="text-lg sm:text-xl font-semibold mb-3"
+                    style={{ color: theme.text.primary }}
+                  >
+                    Frameworks/Libraries
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.frameworks_libraries.map((skill, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 rounded-full text-sm sm:text-base"

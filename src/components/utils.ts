@@ -22,7 +22,7 @@ export const scrollToSection = (sectionId:string) => {
    * @param {Object} styles - Additional styles to merge
    * @returns {Object} Combined style object
    */
-  export const createThemedStyles = (theme, isDarkMode, styles = {}) => {
+  export const createThemedStyles = (styles = {}) => {
     return {
       ...styles,
       transition: "background-color 0.3s ease, color 0.3s ease"

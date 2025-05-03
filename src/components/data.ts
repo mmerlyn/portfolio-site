@@ -1,3 +1,10 @@
+import pythonDS from "../assets/python_ds.pdf";
+import mongodb from "../assets/MongoDB.pdf";
+import awsCloud from "../assets/awsCloud.pdf";
+import dockerKubernetes from "../assets/dockerKubernetes.pdf";
+import react from "../assets/react.pdf";
+
+
 export const projects = [
     {
       title: "DevConnect - A Social Media Platform for Developers",
@@ -48,6 +55,30 @@ export const projects = [
       githubLink:
         "https://github.com/mmerlyn/sales-management-system-for-farmers",
     },
+    {
+      title: "Nutrient Deficiency Detection in Plants for Fertilizer Management",
+      description:
+        "Developed a CNN model (88.24% accuracy) with image-based diagnosis for real-time fertilizer guidance",
+      technologies: ["Python", "Image Processing", "CNN", "OpenCV"],
+      githubLink:
+        "https://github.com/mmerlyn/fertilizer-recommendation",
+    },
+    {
+      title: "American Sign Language Translator for Deaf and Dumb",
+      description:
+        "Built a real-time ASL alphabet recognition app using CNN, OpenCV, and TensorFlow with 99% training accuracy",
+      technologies: ["Python", "OpenCV", "TensorFlow"],
+      githubLink:
+        "https://github.com/mmerlyn/ASL-translator",
+    },
+    {
+      title: "Analysis of Tomato Prices in Karnataka using Machine Learning",
+      description:
+        "Built a Flask web app using Gradient Boosting (80% accuracy) to forecast monthly tomato prices from supply data",
+      technologies: ["Python", "Machine Learning"],
+      githubLink:
+        "https://github.com/mmerlyn/tomato-prices",
+    },
   ];
   
   export const publications = [
@@ -55,7 +86,7 @@ export const projects = [
       title:
         "Co-Author - \"Nitrogen Deficiency Detection in Paddy for Urea Fertilizer Management\"",
       journal: "UIJRT, Volume 02, Issue 07, 2021 (ISSN: 2582-6832)",
-      link: "https://uijrt.com/articles/v2/i7/UIJRTV2I70003.pdf",
+      link: "https://uijrt.com/articles/v2/i7/UIJRTV2I70009.pdf",
     },
     {
       title: "Second Prize - \"Analysis of Tomato Prices in Karnataka Using Machine Learning\"",
@@ -91,7 +122,7 @@ export const projects = [
       "ElasticSearch",
       "Redis",
     ],
-    cloud_devops: ["AWS", "GCP", "Vercel", "Docker"],
+    cloud_devops: ["AWS", "GCP", "Docker", "Vercel"],
     developer_tools: ["Git", "GitHub", "Postman", "Vim"],
     frameworks_libraries: ["TensorFlow", "PySpark"],
   };
@@ -114,9 +145,45 @@ export const projects = [
       verify: "https://www.credly.com/badges/750e57fc-395d-47ee-8d57-b7f187e7c998",
     },
     {
+      title: "AWS Cloud Practitioner Essentials",
+      skills: ["Cloud Computing", "Cloud Economics", "AWS Global Infrastructure", "AWS Security"],
+      platform: "AWS",
+      verify: awsCloud
+    },
+    {
       title: "Python Data Fundamentals",
-      skills: ["Python", "Pandas", "Seaborn", "Statistics", "Data Analytics"],
+      skills: ["Python", "Statistics", "Exploratory Data Analysis", "Data Manipulation", "Data Visualization"],
       platform: "Datacamp",
       verify: "https://www.datacamp.com/completed/statement-of-accomplishment/track/b333a94ce20fb7da9eb367447de9f654635412c9",
+    },
+    {
+      title: "Python Data Structures",
+      skills: ["Python Programming", "Data Structures", "Data Management", "Problem Solving"],
+      platform: "Coursera",
+      verify: pythonDS,
+    }, 
+    {
+      title: "MongoDB - The Complete Developer's Guide 2023",
+      skills: ["MongoDB", "JSON", "Data Modeling"],
+      platform: "Udemy",
+      verify: mongodb,
+    },
+    {
+      title: "Introduction to PySpark",
+      skills: ["Big Data", "Python", "PySpark", "PySparkSQL"],
+      platform: "DataCamp",
+      verify: "https://www.datacamp.com/completed/statement-of-accomplishment/course/7d1f68253152b174e4ac69231fcc206eaad2d0f3",
+    },  
+    {
+      title: "Docker & Kubernetes: The Practical Guide 2023",
+      skills: ["Docker", "Docker Compose", "Kubernetes"],
+      platform: "Udemy",
+      verify: dockerKubernetes,
+    }, 
+    {
+      title: "React - The Complete Guide 2023",
+      skills: ["React.js", "React Router", "Redux", "Context API", "Form Handling & Validations", "Component Reusability"],
+      platform: "Udemy",
+      verify: react
     },  
   ];
