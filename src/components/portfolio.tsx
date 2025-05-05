@@ -348,7 +348,7 @@ const Portfolio = () => {
                       className="text-xl font-bold"
                       style={{ color: theme.primary }}
                     >
-                      7+
+                      10+
                     </div>
                   </div>
                   <div
@@ -398,7 +398,7 @@ const Portfolio = () => {
                       className="text-xl font-bold"
                       style={{ color: theme.secondary }}
                     >
-                      10+
+                      20+
                     </div>
                   </div>
                 </motion.div>
@@ -623,10 +623,10 @@ const Portfolio = () => {
                     className="text-lg sm:text-xl font-semibold mb-3"
                     style={{ color: theme.text.primary }}
                   >
-                    Databases
+                    Data
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {skills.databases.map((skill, index) => (
+                    {skills.data.map((skill, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 rounded-full text-sm sm:text-base"
@@ -650,10 +650,10 @@ const Portfolio = () => {
                     className="text-lg sm:text-xl font-semibold mb-3"
                     style={{ color: theme.text.primary }}
                   >
-                    Cloud/DevOps
+                    Cloud
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {skills.cloud_devops.map((skill, index) => (
+                    {skills.cloud.map((skill, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 rounded-full text-sm sm:text-base"
@@ -679,33 +679,7 @@ const Portfolio = () => {
                     Developer Tools
                   </h3>
                   <div className="flex flex-wrap gap-2">
-                    {skills.developer_tools.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 rounded-full text-sm sm:text-base"
-                        style={{
-                          backgroundColor: isDarkMode
-                            ? "rgba(255,255,255,0.1)"
-                            : "rgba(0,0,0,0.05)",
-                          color: theme.text.secondary,
-                          transition:
-                            "background-color 0.3s ease, color 0.3s ease",
-                        }}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h3
-                    className="text-lg sm:text-xl font-semibold mb-3"
-                    style={{ color: theme.text.primary }}
-                  >
-                    Frameworks/Libraries
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.frameworks_libraries.map((skill, index) => (
+                    {skills.dev_tools.map((skill, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 rounded-full text-sm sm:text-base"
@@ -965,8 +939,8 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Publications/Achievements Section */}
-        <section id="publications" className="pt-16 mt-16">
+        {/* Achievements Section */}
+        <section id="achievements" className="pt-16 mt-16">
           <h2
             className="text-2xl sm:text-3xl font-bold mb-6 flex items-center"
             style={{ color: theme.text.primary }}

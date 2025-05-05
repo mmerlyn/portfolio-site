@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({
     <li>
       <a
         href={`#${section}`}
-        className="text-sm sm:text-base transition-colors hover:text-opacity-80" // Added subtle hover effect
+        className="text-sm sm:text-base transition-colors hover:text-opacity-80" 
         style={{ color: theme.text.secondary }}
         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
           // Typed event
@@ -53,7 +53,7 @@ const Footer: React.FC<FooterProps> = ({
     <footer
       className="py-6 relative mt-16"
       style={{
-        backgroundColor: isDarkMode ? "#1a1a1a" : "#f0f0f0", // Keeping specific colors for footer
+        backgroundColor: isDarkMode ? "#1a1a1a" : "#f0f0f0", 
         borderTop: `1px solid ${
           isDarkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)"
         }`,
@@ -65,11 +65,10 @@ const Footer: React.FC<FooterProps> = ({
           {/* Footer Logo/Description */}
           <div className="space-y-4">
             <a
-              href="#about" // Link to about section for consistency
+              href="#about" 
               aria-label="Go to about section"
-              className="flex items-center space-x-2 cursor-pointer" // Added cursor-pointer
+              className="flex items-center space-x-2 cursor-pointer" 
               onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                // Typed event
                 e.preventDefault();
                 scrollToSection("about");
               }}
@@ -82,7 +81,7 @@ const Footer: React.FC<FooterProps> = ({
               </span>
               <span
                 className="w-2 h-2 rounded-full"
-                style={{ backgroundColor: theme.primary }} // Uses theme.primary
+                style={{ backgroundColor: theme.primary }} 
               ></span>
             </a>
             <p
@@ -126,7 +125,7 @@ const Footer: React.FC<FooterProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="transition-colors text-lg hover:text-opacity-80" // Added subtle hover effect
+                className="transition-colors text-lg hover:text-opacity-80"
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={fabLinkedinIn} size="lg" />{" "}
@@ -137,16 +136,16 @@ const Footer: React.FC<FooterProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="transition-colors text-lg hover:text-opacity-80" // Added subtle hover effect
+                className="transition-colors text-lg hover:text-opacity-80" 
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={fabGithub} size="lg" />{" "}
                 {/* Added size */}
               </a>
               <a
-                href="mailto:merlyn@example.com" // Replace with actual email
+                href="mailto:mmakireddy8011@sdsu.edu" 
                 aria-label="Email Me"
-                className="transition-colors text-lg hover:text-opacity-80" // Added subtle hover effect
+                className="transition-colors text-lg hover:text-opacity-80" 
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />{" "}

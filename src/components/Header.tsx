@@ -130,7 +130,7 @@ const Header: React.FC<HeaderProps> = ({
             <a
               key={link.id}
               href={`#${link.id}`}
-              className="text-sm sm:text-base transition-colors hover:text-opacity-80" // Added hover effect
+              className="text-sm sm:text-base transition-colors hover:text-opacity-80"
               style={{ color: theme.text.primary }}
               onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                 // Desktop doesn't need to close menu
@@ -151,7 +151,7 @@ const Header: React.FC<HeaderProps> = ({
             style={{ color: theme.text.primary }}
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
-            aria-controls="mobile-menu" // Points to the mobile menu container
+            aria-controls="mobile-menu" 
           >
             <FontAwesomeIcon
               icon={isMobileMenuOpen ? faXmark : faBars}
@@ -166,7 +166,7 @@ const Header: React.FC<HeaderProps> = ({
         className={`sm:hidden absolute top-full left-0 right-0 shadow-md transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen
             ? "translate-y-0 opacity-100"
-            : "-translate-y-4 opacity-0 pointer-events-none" // Smooth transition
+            : "-translate-y-4 opacity-0 pointer-events-none" 
         }`}
         style={{
           backgroundColor: `${theme.surface}F2`,
