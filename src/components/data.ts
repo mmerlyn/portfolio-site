@@ -5,50 +5,11 @@ import dockerKubernetes from "../assets/dockerKubernetes.pdf";
 import react from "../assets/react.pdf";
 
 export const skills = {
-  frontend: [
-    "React",
-    "Next.js",
-    "JavaScript",
-    "TypeScript",
-    "HTML/CSS",
-    "Redux",
-    "Tailwind CSS",
-  ],
-  backend: [
-    "Node.js",
-    "Express.js",
-    "Python",
-    "Go",
-    "FastAPI",
-    "GraphQL",
-    "RESTful APIs",
-    "WebSockets",
-    "Firebase",
-    "Microservices",
-  ],
-  data: [
-    "MySQL",
-    "MongoDB",
-    "PostgreSQL",
-    "Redis",
-    "Elasticsearch",
-    "Apache Spark",
-    "PySpark",
-    "Apache Kafka", 
-    "TensorFlow",   
-  ],
-  cloud: [
-    "AWS",
-    "GCP",
-    "Docker",
-    "Vercel",
-  ],
-  dev_tools: [
-    "Git",
-    "GitHub",
-    "Postman",
-    "Vim",
-  ],
+  frontend: ["React", "Next.js", "JavaScript", "TypeScript", "HTML/CSS", "Redux", "Tailwind CSS"],
+  backend: ["Node.js", "Express.js", "Python", "Go", "FastAPI", "GraphQL", "RESTful APIs", "WebSockets", "Firebase", "Microservices"],
+  data: ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Elasticsearch", "Apache Spark", "PySpark", "Apache Kafka", "TensorFlow"],
+  cloud: ["AWS", "GCP", "Docker", "Vercel"],
+  dev_tools: ["Git", "GitHub", "Postman", "Vim"],
 };
 
 export const workExperience = [
@@ -188,6 +149,5 @@ title: "Python Data Structures",
 skills: ["Python Programming", "Data Structures", "Data Management", "Problem Solving"],
 platform: "Coursera",
 verify: pythonDS,
-}, 
-      
+},     
 ];

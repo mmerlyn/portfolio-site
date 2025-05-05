@@ -39,7 +39,6 @@ const Footer: React.FC<FooterProps> = ({
         className="text-sm sm:text-base transition-colors hover:text-opacity-80" 
         style={{ color: theme.text.secondary }}
         onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-          // Typed event
           e.preventDefault();
           scrollToSection(section);
         }}
@@ -129,7 +128,6 @@ const Footer: React.FC<FooterProps> = ({
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={fabLinkedinIn} size="lg" />{" "}
-                {/* Added size */}
               </a>
               <a
                 href="https://github.com/mmerlyn"
@@ -140,7 +138,6 @@ const Footer: React.FC<FooterProps> = ({
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={fabGithub} size="lg" />{" "}
-                {/* Added size */}
               </a>
               <a
                 href="mailto:mmakireddy8011@sdsu.edu" 
@@ -149,7 +146,6 @@ const Footer: React.FC<FooterProps> = ({
                 style={{ color: theme.text.secondary }}
               >
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />{" "}
-                {/* Added size */}
               </a>
             </div>
           </div>

@@ -1,69 +1,37 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faFileAlt,
-  faBriefcase,
-  faCertificate,
-  faGraduationCap,
-  faEnvelope,
-  faExternalLinkAlt,
-  faChevronDown,
-  
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub as fabGithub,
-  faLinkedinIn as fabLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-
-// Import components
+import { faCode, faFileAlt, faBriefcase, faCertificate, faGraduationCap, faEnvelope, faExternalLinkAlt, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faGithub as fabGithub, faLinkedinIn as fabLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Header from "./Header";
 import Footer from "./Footer";
-
-// Import theme and utilities
 import { scrollToSection } from "./utils";
-
-
-
-// Import assets
 import testImage from "../assets/my_photo.jpg";
 import themeColors from "./themeConfig";
-import {   projects, 
-  publications, 
-  skills, 
-  workExperience, 
-  certifications  } from "./data";
+import { projects, publications, skills, workExperience, certifications } from "./data";
 
 const Portfolio = () => {
-  // Theme state
   const [isDarkMode, setIsDarkMode] = useState(true);
   const theme = isDarkMode ? themeColors.dark : themeColors.light;
   
-  // Tab state
   const [activeTab, setActiveTab] = useState("skills");
 
-  // Load saved theme preference on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setIsDarkMode(savedTheme === "dark");
     } else {
-      // Check for system preference
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       setIsDarkMode(prefersDark);
     }
   }, []);
 
-  // Update body background when theme changes
   useEffect(() => {
     document.body.style.backgroundColor = theme.background;
     document.documentElement.style.colorScheme = isDarkMode ? "dark" : "light";
-    // Save theme preference
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   }, [isDarkMode, theme.background]);
 
-  // Toggle theme function
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -446,7 +414,7 @@ const Portfolio = () => {
                 
                 </motion.div>
 
-                {/* Improved Scroll Indicator with proper functionality */}
+                {/* Scroll Indicator with proper functionality */}
                 <motion.div
                   className="flex justify-center lg:justify-start mt-8"
                   initial={{ opacity: 0 }}
@@ -617,7 +585,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                {/* Only showing a few skill categories to simplify code */}
+                {/* Data Skills */}
                 <div>
                   <h3
                     className="text-lg sm:text-xl font-semibold mb-3"
@@ -644,7 +612,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
-
+                {/* Cloud Skills */}
                 <div>
                   <h3
                     className="text-lg sm:text-xl font-semibold mb-3"
@@ -671,6 +639,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
+                {/* Dev Skills */}
                 <div>
                   <h3
                     className="text-lg sm:text-xl font-semibold mb-3"

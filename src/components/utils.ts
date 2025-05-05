@@ -1,12 +1,11 @@
 /**
- * Smoothly scrolls to a section with proper offset for fixed header
- * @param {string} sectionId - The ID of the section to scroll to
+ * @param {string} sectionId
  */
 export const scrollToSection = (sectionId:string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      // Add offset to account for fixed header height
-      const headerHeight = 80; // Adjust based on your header height
+      
+      const headerHeight = 80; 
       const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: sectionTop - headerHeight,
@@ -16,11 +15,10 @@ export const scrollToSection = (sectionId:string) => {
   };
   
   /**
-   * Helper function for creating style objects with theme colors
-   * @param {Object} theme - The current theme object
-   * @param {boolean} isDarkMode - Whether dark mode is active
-   * @param {Object} styles - Additional styles to merge
-   * @returns {Object} Combined style object
+   * @param {Object} theme 
+   * @param {boolean} isDarkMode 
+   * @param {Object} styles 
+   * @returns {Object} 
    */
   export const createThemedStyles = (styles = {}) => {
     return {

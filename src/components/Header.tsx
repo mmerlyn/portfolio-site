@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSun,
-  faMoon,
-  faBars,
-  faXmark,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import {faSun, faMoon, faBars, faXmark, faLocationDot,} from "@fortawesome/free-solid-svg-icons";
 
 interface Theme {
   surface: string;
@@ -33,49 +27,41 @@ const Header: React.FC<HeaderProps> = ({
   theme,
   scrollToSection,
 }) => {
-  // State to manage mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Function to toggle mobile menu state
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Function to handle link clicks (scroll and close menu)
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     section: string
   ) => {
     e.preventDefault();
     scrollToSection(section);
-    setIsMobileMenuOpen(false); // Close mobile menu after clicking a link
+    setIsMobileMenuOpen(false);
   };
 
-  // Optional: Close mobile menu if window is resized to desktop view
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 640 && isMobileMenuOpen) {
-        // 640px is Tailwind's 'sm' breakpoint
         setIsMobileMenuOpen(false);
       }
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [isMobileMenuOpen]); // Re-run effect if isMobileMenuOpen changes
+  }, [isMobileMenuOpen]);
 
-  // Define navigation links data
   const navLinks = [
     { id: "about", label: "About" },
     { id: "experience", label: "Skills" },
     { id: "projects", label: "Projects" },
-    { id: "publications", label: "Achievements" },
+    { id: "achievements", label: "Achievements" },
     { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
     <header
-      // Add relative positioning context for the absolute mobile menu
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md p-4"
       style={{
         backgroundColor: `${theme.surface}${isDarkMode ? "E6" : "E6"}`,
@@ -133,7 +119,6 @@ const Header: React.FC<HeaderProps> = ({
               className="text-sm sm:text-base transition-colors hover:text-opacity-80"
               style={{ color: theme.text.primary }}
               onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                // Desktop doesn't need to close menu
                 e.preventDefault();
                 scrollToSection(link.id);
               }}
